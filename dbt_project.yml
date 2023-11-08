@@ -4,6 +4,7 @@ config-version: 2
 
 profile: 'dbt_training'
 
+
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
