@@ -4,7 +4,6 @@ config-version: 2
 
 profile: 'dbt_training'
 
-
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -12,10 +11,18 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:
+target-path: "target" 
+clean-targets: 
   - "target"
   - "dbt_packages"
 
+seeds:
+  dbt_training:
+    sale_dates:
+      +column_types:
+        SALE_DATE: date
+        NAME: varchar
+        DISCOUNT_PERCENT: numeric(18,2)
 
 models:
   dbt_training:
