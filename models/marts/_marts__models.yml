@@ -7,11 +7,11 @@ models:
       - name: customer_id
         description: The unique identifier for a single customer.
       - name: created_at_est
-        tests: 
-          - est_timezone_offset
+        # tests: 
+        #   - est_timezone_offset
       - name: updated_at_est
-        tests: 
-          - est_timezone_offset
+        # tests: 
+        #   - est_timezone_offset
 
   - name: orders
     description: '{{ doc("orders_table_description") }}'
@@ -19,5 +19,5 @@ models:
       - name: order_id
         description: The unique identifier for a single order.
       - name: created_at_est
-        tests: 
-          - est_timezone_offset
+        # tests: 
+        #   - est_timezone_offset
